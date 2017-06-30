@@ -59,3 +59,4 @@ class Event {
       mPrice = ((mBeverage + mFood + mEntertainment) * mPeople);
     }
 }
+//only here to make a commit message work
