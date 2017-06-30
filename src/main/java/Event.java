@@ -8,55 +8,50 @@ class Event {
   private Boolean mEntertainment;
   private int mPrice;
 
-  public Event(int people, Boolean beverage, Boolean food, Boolean entertainment, int price){
+  public Event(int people, String beverage, String food, String entertainment){
     mPeople = 1;
     mBeverage = beverage;
     mFood = food;
     mEntertainment = entertainment;
-    mPrice = 0;
     Integer cost = 0;
   }
-
-    public int getPeople(int people) {
+    int getPeople(int people) {
       if (mPeople <=10)  {
-        return cost = 150;
+        return cost += 150;
       } else if (mPeople > 10 && mPeople <= 50) {
-        return  cost = ;
+        return  cost += 300;
       } else if (mPeople > 50 && mPeople <= 100)  {
-        return mPeople * 7;
+        return cost = +600;
       } else if (mPeople > 100 && mPeople <= 200) {
-        return mPeople * 9;
+        return cost = +1200;
       } else if (mPeople > 200)  {
-        return mPeople * 11;
+        return cost = +2400;
       }
-      return mPeople;
-    }
 
-    public Boolean getBeverage(boolean beverage) {
+    String getBeverage(String userBeverage) {
       if (userBeverage.equals("yes")) {
-        return mBeverage = 1.20;
+        return cost = cost * 1.20;
       } else {
-        return mBeverage = 0;
+        return cost += 0;
       }
     }
 
-    public Boolean getFood() {
+    Boolean getFood(String userFood) {
       if (userFood.equals("yes")) {
-        return mFood = 1.60;
+        return cost = cost * 1.60;
       } else {
-        return mFood = 0;
+        return cost += 0;
       }
     }
 
-    public String getEntertainment() {
+    String getEntertainment(String userEntertainment) {
       if (userEntertainment.equals("yes")) {
-        return mEntertainment = 1.5;
+        return cost = cost * 1.5;
       } else {
-        return mEntertainment = 0;
+        return cost += 0;
       }
     }
-    public Integer getPrice(){
-      mPrice = ((mBeverage + mFood + mEntertainment) * mPeople);
+
     }
 }
 //only here to make a commit message work
