@@ -18,4 +18,4 @@ public class App {
     String userEntertainment = myConsole.readline();
     Console myConsole = System.console();
     System.out.println("Your total cost is " mPrice)
-  }
+  } 
