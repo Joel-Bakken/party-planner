@@ -19,9 +19,9 @@ class Event {
 
     public int getPeople(int people) {
       if (mPeople <=10)  {
-        return mPeople * 5;
+        return cost = 150;
       } else if (mPeople > 10 && mPeople <= 50) {
-        return mPeople * 6;
+        return  cost = ;
       } else if (mPeople > 50 && mPeople <= 100)  {
         return mPeople * 7;
       } else if (mPeople > 100 && mPeople <= 200) {
