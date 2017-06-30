@@ -6,21 +6,12 @@ import java.util.List;
 public class EventTest {
 
   @Test
-  public void numberPeople_howManyPeopleAreAttending_1()  {
-    Event testEvent = new Event();
-    Integer expected = 1;
-    assertEquals(expected, testEvent.numberPeople());
+  public void newEvent_instantiatesCorrectly() {
+    Event testEvent = new Event(2, true, true, true, 0);
+    assertEquals(true, testEvent instanceof Event);
   }
-  @Test
-  public void beverageWanted_doYouWantBeverageService_true() {
-    Event testEvent = new Event();
-    boolean expected = true;
-    assertEquals(expected, testEvent.beverageWanted());
-  }
-  @Test
-  public void foodWanted_doYouWantFoodService_true() {
-    Event testEvent = new Event();
-    boolean expected = true;
-    assertEquals(expected, testEvent.foodWanted());
-  }
-}
+  // @Test
+  //   public void newRectangle_instantiatesCorrectly() {
+  //     Rectangle testRectangle = new Rectangle(2, 4);
+  //     assertEquals(true, testRectangle instanceof Rectangle);
+  //   }
