@@ -7,21 +7,13 @@ public class App {
     Console myConsole = System.console();
     System.out.println("How many people are attending the party:");
     Integer stringNumber  = Integer.parseInt(myConsole.readLine());
-    Console myConsole = System.console();
     System.out.println("Do you want beverage service, this always includes a full bar: yes or no?");
     String userBeverage = myConsole.readLine();
-    Console myConsole = System.console();
     System.out.println("Do you want food service, this always includes appitizers, dinner and dessert: yes or no?");
     String useFood = myConsole.readLine();
-    Console myConsole = System.console();
     System.out.println("Do you want entertainment services, this always includes DJ and a stand-up commedian: yes or no?");
     String userEntertainment = myConsole.readline();
-    Console myConsole = System.console();
+    public Event newEvent = new Event();
     System.out.println("Your total cost is " + cost);
   }
-  public Event newEvent = new Event();
-  newEvent.mPeople = 1;
-  newEvent.mBeverage = "yes";
-  newEvent.mFood = "yes";
-  newEvent.mEntertainment = "yes";
 }
