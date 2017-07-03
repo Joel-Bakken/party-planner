@@ -3,9 +3,9 @@ import java.util.List;
 
 class Event {
   private int mPeople;
-  private Boolean mBeverage;
-  private Boolean mFood;
-  private Boolean mEntertainment;
+  private String mBeverage;
+  private String mFood;
+  private String mEntertainment;
   private double mPrice;
 
   public Event(int people, String beverage, String food, String entertainment){
@@ -55,4 +55,3 @@ class Event {
 
     }
 }
-//only here to make a commit message work
