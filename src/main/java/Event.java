@@ -6,16 +6,16 @@ class Event {
   private Boolean mBeverage;
   private Boolean mFood;
   private Boolean mEntertainment;
-  private int mPrice;
+  private double mPrice;
 
   public Event(int people, String beverage, String food, String entertainment){
     mPeople = 1;
     mBeverage = beverage;
     mFood = food;
     mEntertainment = entertainment;
-    Integer cost = 0;
+    mPrice = 0;
   }
-    int getPeople(int people) {
+   public int getPeople() {
       if (mPeople <=10)  {
         return cost += 150;
       } else if (mPeople > 10 && mPeople <= 50) {
@@ -27,8 +27,9 @@ class Event {
       } else if (mPeople > 200)  {
         return cost = +2400;
       }
+    }
 
-    String getBeverage(String userBeverage) {
+    public int getBeverage() {
       if (userBeverage.equals("yes")) {
         return cost = cost * 1.20;
       } else {
@@ -36,7 +37,7 @@ class Event {
       }
     }
 
-    Boolean getFood(String userFood) {
+    public int getFood() {
       if (userFood.equals("yes")) {
         return cost = cost * 1.60;
       } else {
@@ -44,7 +45,7 @@ class Event {
       }
     }
 
-    String getEntertainment(String userEntertainment) {
+    public int getEntertainment() {
       if (userEntertainment.equals("yes")) {
         return cost = cost * 1.5;
       } else {
