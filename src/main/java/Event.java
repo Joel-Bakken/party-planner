@@ -2,56 +2,59 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Event {
-  private int mPeople;
+  private float mPeople;
   private String mBeverage;
   private String mFood;
   private String mEntertainment;
-  private double mPrice;
+  private float mPrice;
 
   public Event(int people, String beverage, String food, String entertainment){
-    mPeople = 1;
+    mPeople = 0;
     mBeverage = beverage;
     mFood = food;
     mEntertainment = entertainment;
     mPrice = 0;
   }
-   public int getPeople() {
+   public float getPeople() {
       if (mPeople <=10)  {
-        return cost += 150;
+        return mPrice += 150;
       } else if (mPeople > 10 && mPeople <= 50) {
-        return  cost += 300;
+        return  mPrice += 300;
       } else if (mPeople > 50 && mPeople <= 100)  {
-        return cost = +600;
+        return mPrice += 600;
       } else if (mPeople > 100 && mPeople <= 200) {
-        return cost = +1200;
+        return mPrice += 1200;
       } else if (mPeople > 200)  {
-        return cost = +2400;
-      }
-    }
-
-    public int getBeverage() {
-      if (userBeverage.equals("yes")) {
-        return cost = cost * 1.20;
+        return mPrice += 2400;
       } else {
-        return cost += 0;
+        return 0;
       }
     }
 
-    public int getFood() {
-      if (userFood.equals("yes")) {
-        return cost = cost * 1.60;
+    public float getBeverage() {
+      if (mBeverage.equals("yes")) {
+        return mPrice *= 1.20;
       } else {
-        return cost += 0;
+        return mPrice += 0;
       }
     }
 
-    public int getEntertainment() {
-      if (userEntertainment.equals("yes")) {
-        return cost = cost * 1.5;
+    public float getFood() {
+      if (mFood.equals("yes")) {
+        return mPrice *= 1.60;
       } else {
-        return cost += 0;
+        return mPrice += 0;
       }
     }
 
+    public float getEntertainment() {
+      if (mEntertainment.equals("yes")) {
+        return mPrice *= 1.5;
+      } else {
+        return mPrice += 0;
+      }
+    }
+    public float calculateCost()  {
+      return mPrice;
     }
 }
