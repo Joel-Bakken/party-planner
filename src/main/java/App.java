@@ -10,10 +10,10 @@ public class App {
     System.out.println("Do you want beverage service, this always includes a full bar: yes or no?");
     String userBeverage = myConsole.readLine();
     System.out.println("Do you want food service, this always includes appitizers, dinner and dessert: yes or no?");
-    String useFood = myConsole.readLine();
+    String userFood = myConsole.readLine();
     System.out.println("Do you want entertainment services, this always includes DJ and a stand-up commedian: yes or no?");
-    String userEntertainment = myConsole.readline();
-    public Event newEvent = new Event();
-    System.out.println("Your total cost is " + cost);
+    String userEntertainment = myConsole.readLine();
+    Event newEvent = new Event(stringNumber, userBeverage, userFood, userEntertainment);
+    System.out.println("Your total cost is " + newEvent.calculateCost());
   }
 }
