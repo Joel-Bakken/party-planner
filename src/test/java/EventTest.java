@@ -6,7 +6,8 @@ import java.util.List;
 public class EventTest {
 
   @Test
-  public void newEvent_instantiatesCorrectly() {
-    Event testEvent = new Event(2, true, true, true, 0);
+  public void newEvent_instantiatesCorrectly_true() {
+    Event testEvent = new Event(10, "yes", "yes", "yes");
     assertEquals(true, testEvent instanceof Event);
   }
+}
