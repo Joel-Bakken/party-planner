@@ -10,4 +10,10 @@ public class EventTest {
     Event testEvent = new Event(10, "yes", "yes", "yes");
     assertEquals(true, testEvent instanceof Event);
   }
+
+  @Test
+  public void newEvent_calculatesCorrectly_2400() {
+    Event testEvent = new Event(200, "no", "no", "no");
+    assertEquals(2400, testEvent.calculateCost());
+  }
 }
