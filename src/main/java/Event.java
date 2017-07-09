@@ -49,7 +49,7 @@ class Event {
 
     public float getEntertainment() {
       if (mEntertainment.equals("yes")) {
-        return mPrice *= 1.5;
+        return mPrice *= 1.50;
       } else {
         return mPrice += 0;
       }
