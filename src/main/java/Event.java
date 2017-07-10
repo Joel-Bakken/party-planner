@@ -8,7 +8,7 @@ class Event {
   private String mEntertainment;
   private float mPrice;
 
-  public Event(int people, String beverage, String food, String entertainment){
+  public Event(float people, String beverage, String food, String entertainment){
     mPeople = 0;
     mBeverage = beverage;
     mFood = food;
