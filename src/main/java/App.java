@@ -6,7 +6,8 @@ public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
     System.out.println("How many people are attending the party:");
-    Float stringNumber  = Float.parseFloat(myConsole.readLine());
+    String tempString = myConsole.readLine();
+    int stringNumber  = Integer.parseInt(tempString);
     System.out.println("Do you want beverage service, this always includes a full bar: yes or no?");
     String userBeverage = myConsole.readLine();
     System.out.println("Do you want food service, this always includes appitizers, dinner and dessert: yes or no?");
